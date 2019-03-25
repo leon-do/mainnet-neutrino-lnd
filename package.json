@@ -1,0 +1,15 @@
+{
+  "name": "mainnet-neutrino-lnd",
+  "version": "1.0.0",
+  "description": "./lnd-debug --lnddir=./",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ln-service": "^34.6.0"
+  }
+}
