@@ -4,4 +4,4 @@ npm install
 
 ./lncli-debug --lnddir ./lnd create
 
-./lncli-debug --lnddir ./lnd getinfo
+node app.js
