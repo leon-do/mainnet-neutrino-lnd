@@ -1,7 +1,7 @@
 {
   "name": "mainnet-neutrino-lnd",
   "version": "1.0.0",
-  "description": "./lnd-debug --lnddir=./",
+  "description": "mainnet-neutrino-lnd",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
