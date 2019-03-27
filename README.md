@@ -1,3 +1,7 @@
+git clone git@github.com:leon-do/mainnet-neutrino-lnd.git
+
+cd mainnet-neutrino-lnd
+
 ./lnd-debug --lnddir=./lnd
 
 ./lncli-debug --lnddir ./lnd create
