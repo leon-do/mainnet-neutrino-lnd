@@ -6,6 +6,8 @@ cd mainnet-neutrino-lnd
 
 ./lncli-debug --lnddir ./lnd create
 
+./lncli-debug --lnddir ./lnd unlock
+
 npm install
 
 node app.js
