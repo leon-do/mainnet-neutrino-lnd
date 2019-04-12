@@ -1,16 +1,16 @@
-git clone git@github.com:leon-do/mainnet-neutrino-lnd.git
+`git clone git@github.com:leon-do/mainnet-neutrino-lnd.git`
 
-cd mainnet-neutrino-lnd
+`cd mainnet-neutrino-lnd`
 
-./lnd-debug --lnddir=./lnd
+`./lnd-debug --lnddir=./lnd`
 
-./lncli-debug --lnddir ./lnd create
+`./lncli-debug --lnddir ./lnd create`
 
-./lncli-debug --lnddir ./lnd unlock
+`./lncli-debug --lnddir ./lnd unlock`
 
-npm install
+`npm install`
 
-node app.js
+`node app.js`
 
 
 ![](https://i.imgur.com/1GoAuoY.png)
