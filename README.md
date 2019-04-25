@@ -2,11 +2,11 @@
 
 `cd mainnet-neutrino-lnd`
 
-`./lnd-debug --lnddir=./lnd`
+`./lnd-osx --lnddir=./lnd`
 
-`./lncli-debug --lnddir ./lnd create`
+`./lncli-osx --lnddir ./lnd create`
 
-`./lncli-debug --lnddir ./lnd unlock`
+`./lncli-osx --lnddir ./lnd unlock`
 
 `npm install`
 
