@@ -1,15 +1,23 @@
 {
   "name": "mainnet-neutrino-lnd",
   "version": "1.0.0",
-  "description": "mainnet-neutrino-lnd",
-  "main": "app.js",
+  "description": "`git clone git@github.com:leon-do/mainnet-neutrino-lnd.git`",
+  "main": "connect.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon-do/mainnet-neutrino-lnd.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leon-do/mainnet-neutrino-lnd/issues"
+  },
+  "homepage": "https://github.com/leon-do/mainnet-neutrino-lnd#readme",
   "dependencies": {
-    "ln-service": "^34.6.0"
+    "base64url": "^3.0.1",
+    "ip": "^1.1.5"
   }
 }

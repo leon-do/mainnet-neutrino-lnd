@@ -1,0 +1,245 @@
+2019-04-26 09:54:40.172 [INF] LTND: Version: 0.6.0-beta commit=v0.6.0-beta-72-g1387af8c9461ae23f735c240284e0d90a2b2cc47-dirty, build=development, logging=default
+2019-04-26 09:54:40.172 [INF] LTND: Active chain: Bitcoin (network=mainnet)
+2019-04-26 09:54:40.174 [INF] CHDB: Checking for schema update: latest_version=8, db_version=8
+2019-04-26 09:54:40.174 [INF] RPCS: Generating TLS certificates...
+2019-04-26 09:54:40.183 [INF] RPCS: Done generating TLS certificates
+2019-04-26 09:54:40.223 [INF] BTCN: Loaded 0 addresses from file 'lnd/data/chain/bitcoin/mainnet/peers.json'
+2019-04-26 09:54:40.223 [INF] BTCN: Registering block subscription: id=1
+2019-04-26 09:54:40.223 [INF] BTCN: Broadcaster now active
+2019-04-26 09:54:40.223 [INF] RPCS: password RPC server listening on 127.0.0.1:10009
+2019-04-26 09:54:40.223 [INF] RPCS: password gRPC proxy started at 127.0.0.1:8080
+2019-04-26 09:54:40.223 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
+2019-04-26 09:54:40.256 [INF] CMGR: DNS discovery failed on seed x49.dnsseed.bluematt.me: lookup x49.dnsseed.bluematt.me: no such host
+2019-04-26 09:54:40.257 [INF] CMGR: DNS discovery failed on seed x49.seed.bitcoin.jonasschnelli.ch: lookup x49.seed.bitcoin.jonasschnelli.ch: no such host
+2019-04-26 09:54:40.262 [INF] CMGR: 38 addresses found from DNS seed dnsseed.bitcoin.dashjr.org
+2019-04-26 09:54:40.329 [INF] BTCN: New valid peer 35.196.248.174:8333 (outbound) (/btcwire:0.5.0/btcd:0.12.0/)
+2019-04-26 09:54:40.329 [INF] BTCN: Waiting for more block headers, then will start cfheaders sync from height 0...
+2019-04-26 09:54:40.329 [INF] BTCN: Syncing to block height 573340 from peer 35.196.248.174:8333
+2019-04-26 09:54:40.329 [INF] BTCN: Downloading headers for blocks 1 to 11111 from peer 35.196.248.174:8333
+2019-04-26 09:54:40.414 [INF] CMGR: DNS discovery failed on seed x49.seed.bitcoinstats.com: lookup x49.seed.bitcoinstats.com: no such host
+2019-04-26 09:54:40.422 [INF] CMGR: 40 addresses found from DNS seed seed.bitnodes.io
+2019-04-26 09:54:40.571 [INF] BTCN: Starting cfheaders sync from (block_height=0, block_hash=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f) to (block_height=2000, block_hash=00000000dfd5d65c9d8561b4b8f60a63018fe3933ecb131fb37f905f87da951a)
+2019-04-26 09:54:40.571 [INF] BTCN: Starting cfheaders sync for filter_type=0
+2019-04-26 09:54:40.686 [INF] BTCN: Fetching set of checkpointed cfheaders filters from height=0, hash=02c2392180d0ce2b5b6f8b08d39a11ffe831c673311a3ecf77b97fc3f0303c9f
+2019-04-26 09:54:40.686 [INF] BTCN: Starting to query for cfheaders from checkpoint_interval=0
+2019-04-26 09:54:40.686 [INF] BTCN: Attempting to query for 2 cfheader batches
+2019-04-26 09:54:41.190 [INF] BTCN: Verified downloaded block header against checkpoint at height 11111/hash 0000000069e244f73d78e8fd29ba2fd2ed618bd6fa2ee92559f542fdb26e7c1d
+2019-04-26 09:54:42.337 [INF] BTCN: Verified downloaded block header against checkpoint at height 33333/hash 000000002dd5588a74784eaa7ab0507a18ad16a236e7b1ce69f00d7ddfb5d0a6
+2019-04-26 09:54:43.883 [INF] BTCN: Waiting for more block headers, then will start cfheaders sync from height 2000...
+2019-04-26 09:54:43.883 [INF] BTCN: Starting cfheaders sync from (block_height=2000, block_hash=00000000dfd5d65c9d8561b4b8f60a63018fe3933ecb131fb37f905f87da951a) to (block_height=63333, block_hash=00000000014a6f29145a6e8449bfb6f5bd5e95e1e433d1db39187972c2a05963)
+2019-04-26 09:54:43.883 [INF] BTCN: Starting cfheaders sync for filter_type=0
+2019-04-26 09:54:43.883 [INF] BTCN: Fetching set of checkpointed cfheaders filters from height=2000, hash=d9bd5262d8e0f7752ec02c1a491ba6cf7f62badf13cf30cee48cd5c66520eff9
+2019-04-26 09:54:43.883 [INF] BTCN: Starting to query for cfheaders from checkpoint_interval=2
+2019-04-26 09:54:43.883 [INF] BTCN: Attempting to query for 61 cfheader batches
+2019-04-26 09:54:44.560 [INF] BTCN: Verified downloaded block header against checkpoint at height 74000/hash 0000000000573993a3c9e41ce34471c079dcf5f52a0e824a81e7f953b8661a20
+2019-04-26 09:54:46.542 [INF] BTCN: Verified downloaded block header against checkpoint at height 105000/hash 00000000000291ce28027faea320c8d2b054b2e0fe44a773f3eefb151d6bdc97
+2019-04-26 09:54:48.790 [INF] BTCN: Verified downloaded block header against checkpoint at height 134444/hash 00000000000005b12ffd4cd315cd34ffd4a594f430ac814c91184a0d42d2b0fe
+2019-04-26 09:54:50.195 [INF] BTCN: Verified 47001 filter headers in the last 10s (height 47001, 2010-03-25 03:17:14 -0600 MDT)
+2019-04-26 09:54:50.254 [INF] BTCN: Processed 152445 blocks in the last 10.06s (height 152445, 2011-11-08 15:04:35 -0700 MST)
+2019-04-26 09:54:51.344 [INF] BTCN: Verified downloaded block header against checkpoint at height 168000/hash 000000000000099e61ea72015e79632f216fe6cb33d7899acb35b75c8303b763
+2019-04-26 09:54:53.388 [INF] BTCN: Verified downloaded block header against checkpoint at height 193000/hash 000000000000059f452a5f7340de6682a977387c17010ff6e6c3bd83ca8b1317
+2019-04-26 09:54:54.728 [INF] BTCN: Verified downloaded block header against checkpoint at height 210000/hash 000000000000048b95347e83192f69cf0366076336c639f9b7228e9ba171342e
+2019-04-26 09:54:55.316 [INF] BTCN: Verified downloaded block header against checkpoint at height 216116/hash 00000000000001b4f4b433e81ee46494af945cf96014816a4e2370f11b23df4e
+2019-04-26 09:54:55.619 [INF] BTCN: Waiting for more block headers, then will start cfheaders sync from height 63000...
+2019-04-26 09:54:55.619 [INF] BTCN: Starting cfheaders sync from (block_height=63000, block_hash=000000000abcf1c5c959bfbbdf5ad13054a1c43e60e168d6ef790b8200e0891b) to (block_height=220116, block_hash=00000000000003a03de28067627797f927ef5dac6b0f6eadf0f5f0246defd17d)
+2019-04-26 09:54:55.619 [INF] BTCN: Starting cfheaders sync for filter_type=0
+2019-04-26 09:54:55.619 [INF] BTCN: Fetching set of checkpointed cfheaders filters from height=63000, hash=741dc56d7465e53589baa163842c437b07a7194b967b92000f05071b56a0e22e
+2019-04-26 09:54:55.619 [INF] BTCN: Starting to query for cfheaders from checkpoint_interval=63
+2019-04-26 09:54:55.620 [INF] BTCN: Attempting to query for 157 cfheader batches
+2019-04-26 09:54:55.989 [INF] BTCN: Verified downloaded block header against checkpoint at height 225430/hash 00000000000001c108384350f74090433e7fcf79a606b8e797f065b130575932
+2019-04-26 09:54:58.012 [INF] BTCN: Verified downloaded block header against checkpoint at height 250000/hash 000000000000003887df1f29024b06fc2200b55f8af8f35453d7be294df2d214
+2019-04-26 09:54:58.235 [INF] CMGR: DNS discovery failed on seed x49.seed.bitcoin.sipa.be: lookup x49.seed.bitcoin.sipa.be: no such host
+2019-04-26 09:54:58.979 [INF] LNWL: Opened wallet
+2019-04-26 09:54:59.049 [INF] LTND: Primary chain is set to: bitcoin
+2019-04-26 09:54:59.296 [INF] BTCN: Verified downloaded block header against checkpoint at height 267300/hash 000000000000000a83fbd660e918f218bf37edd92b748ad940483c7c116179ac
+2019-04-26 09:54:59.670 [INF] LNWL: The wallet has been unlocked without a time limit
+2019-04-26 09:54:59.671 [INF] LTND: LightningWallet opened
+2019-04-26 09:54:59.673 [INF] LNWL: Caught up to height 0
+2019-04-26 09:54:59.673 [INF] HSWC: Restoring in-memory circuit state from disk
+2019-04-26 09:54:59.673 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2019-04-26 09:54:59.674 [INF] SWPR: Migrating UTXO nursery finalized TXIDs
+2019-04-26 09:54:59.675 [INF] LTND: Channel backup proxy channel notifier starting
+2019-04-26 09:54:59.675 [INF] ATPL: Instantiating autopilot with cfg: (*lnd.autoPilotConfig)(0xc0001fe500)({
+ Active: (bool) false,
+ Heuristic: (map[string]float64) (len=1) {
+  (string) (len=12) "preferential": (float64) 1
+ },
+ MaxChannels: (int) 5,
+ Allocation: (float64) 0.6,
+ MinChannelSize: (int64) 20000,
+ MaxChannelSize: (int64) 16777215,
+ Private: (bool) false,
+ MinConfs: (int32) 0
+})
+
+2019-04-26 09:54:59.675 [INF] RPCS: RPC server listening on 127.0.0.1:10009
+2019-04-26 09:54:59.675 [INF] LTND: Waiting for chain backend to finish sync, start_height=90000
+2019-04-26 09:54:59.675 [INF] RPCS: gRPC proxy started at 127.0.0.1:8080
+2019-04-26 09:54:59.966 [INF] LNWL: Caught up to height 10000
+2019-04-26 09:55:00.143 [INF] BTCN: Verified downloaded block header against checkpoint at height 279000/hash 0000000000000001ae8c72a0b0c301f67e3afca10e819efa9041e458e9bd7e40
+2019-04-26 09:55:00.213 [INF] BTCN: Verified 46000 filter headers in the last 10.01s (height 93001, 2010-11-20 09:42:28 -0700 MST)
+2019-04-26 09:55:00.239 [INF] LNWL: Caught up to height 20000
+2019-04-26 09:55:00.347 [INF] BTCN: Processed 126556 blocks in the last 10.09s (height 279001, 2014-01-06 15:40:39 -0700 MST)
+2019-04-26 09:55:00.436 [INF] LNWL: Caught up to height 30000
+2019-04-26 09:55:00.630 [INF] LNWL: Caught up to height 40000
+2019-04-26 09:55:00.926 [INF] LNWL: Caught up to height 50000
+2019-04-26 09:55:01.202 [INF] LNWL: Caught up to height 60000
+2019-04-26 09:55:01.476 [INF] LNWL: Caught up to height 70000
+2019-04-26 09:55:01.702 [INF] LNWL: Caught up to height 80000
+2019-04-26 09:55:01.844 [INF] BTCN: Verified downloaded block header against checkpoint at height 300255/hash 0000000000000000162804527c6e9b9f0563a280525f9d08c12041def0a0f3b2
+2019-04-26 09:55:01.970 [INF] LNWL: Caught up to height 90000
+2019-04-26 09:55:02.359 [INF] LNWL: Caught up to height 100000
+2019-04-26 09:55:02.713 [INF] LNWL: Caught up to height 110000
+2019-04-26 09:55:03.423 [INF] BTCN: Verified downloaded block header against checkpoint at height 319400/hash 000000000000000021c6052e9becade189495d1c539aa37c58917305fd15f13b
+2019-04-26 09:55:04.310 [INF] LNWL: Caught up to height 120000
+2019-04-26 09:55:05.447 [INF] BTCN: Verified downloaded block header against checkpoint at height 343185/hash 0000000000000000072b8bf361d01a6ba7d445dd024203fafc78768ed4368554
+2019-04-26 09:55:06.038 [INF] LNWL: Caught up to height 130000
+2019-04-26 09:55:06.336 [INF] BTCN: Verified downloaded block header against checkpoint at height 352940/hash 000000000000000010755df42dba556bb72be6a32f3ce0b6941ce4430152c9ff
+2019-04-26 09:55:07.825 [INF] LNWL: Caught up to height 140000
+2019-04-26 09:55:08.861 [INF] BTCN: Verified downloaded block header against checkpoint at height 382320/hash 00000000000000000a8dc6ed5b133d0eb2fd6af56203e4159789b092defd8ab2
+2019-04-26 09:55:09.572 [INF] LNWL: Caught up to height 150000
+2019-04-26 09:55:10.215 [INF] BTCN: Verified 60000 filter headers in the last 10s (height 153001, 2011-11-12 13:22:25 -0700 MST)
+2019-04-26 09:55:10.442 [INF] BTCN: Processed 119320 blocks in the last 10.09s (height 398321, 2016-02-13 18:49:33 -0700 MST)
+2019-04-26 09:55:15.254 [INF] LNWL: Caught up to height 160000
+2019-04-26 09:55:17.532 [INF] LNWL: Caught up to height 170000
+2019-04-26 09:55:19.229 [INF] LNWL: Caught up to height 180000
+2019-04-26 09:55:20.335 [INF] BTCN: Verified 32000 filter headers in the last 10.11s (height 185001, 2012-06-17 11:02:02 -0600 MDT)
+2019-04-26 09:55:20.554 [INF] BTCN: Processed 62000 blocks in the last 10.11s (height 460321, 2017-04-03 22:41:25 -0600 MDT)
+2019-04-26 09:55:21.024 [INF] LNWL: Caught up to height 190000
+2019-04-26 09:55:22.800 [INF] LNWL: Caught up to height 200000
+2019-04-26 09:55:24.507 [INF] LNWL: Caught up to height 210000
+2019-04-26 09:55:26.291 [INF] LNWL: Caught up to height 220000
+2019-04-26 09:55:29.374 [INF] BTCN: Waiting for more block headers, then will start cfheaders sync from height 220000...
+2019-04-26 09:55:29.374 [INF] BTCN: Starting cfheaders sync from (block_height=220000, block_hash=000000000000002fdd2c741ed50bc3975a640ca419081711f30f553939641303) to (block_height=560320, block_hash=00000000000000000010906165f7eb833ef5c01dcad7e376cb27e811e0ab89e5)
+2019-04-26 09:55:29.374 [INF] BTCN: Starting cfheaders sync for filter_type=0
+2019-04-26 09:55:29.464 [INF] BTCN: Fetching set of checkpointed cfheaders filters from height=220000, hash=f440e6d9bb23cd2c1b51308657afd5b152869602cfdacafa4c8ab0b57ff05cd7
+2019-04-26 09:55:29.464 [INF] BTCN: Starting to query for cfheaders from checkpoint_interval=220
+2019-04-26 09:55:29.582 [INF] BTCN: Attempting to query for 340 cfheader batches
+2019-04-26 09:55:30.460 [INF] BTCN: Verified 39000 filter headers in the last 10.12s (height 224001, 2013-03-02 23:00:02 -0700 MST)
+2019-04-26 09:55:31.086 [INF] LNWL: Caught up to height 230000
+2019-04-26 09:55:32.296 [INF] LNWL: Caught up to height 240000
+2019-04-26 09:55:33.438 [INF] LNWL: Caught up to height 250000
+2019-04-26 09:55:34.451 [INF] LNWL: Caught up to height 260000
+2019-04-26 09:55:35.532 [INF] LNWL: Caught up to height 270000
+2019-04-26 09:55:36.740 [INF] LNWL: Caught up to height 280000
+2019-04-26 09:55:38.029 [INF] LNWL: Caught up to height 290000
+2019-04-26 09:55:39.124 [INF] LNWL: Caught up to height 300000
+2019-04-26 09:55:40.226 [INF] LNWL: Caught up to height 310000
+2019-04-26 09:55:40.472 [INF] BTCN: Verified 89000 filter headers in the last 10.01s (height 313001, 2014-07-29 05:13:52 -0600 MDT)
+2019-04-26 09:55:41.221 [INF] LNWL: Caught up to height 320000
+2019-04-26 09:55:42.423 [INF] LNWL: Caught up to height 330000
+2019-04-26 09:55:43.411 [INF] LNWL: Caught up to height 340000
+2019-04-26 09:55:44.507 [INF] LNWL: Caught up to height 350000
+2019-04-26 09:55:45.511 [INF] LNWL: Caught up to height 360000
+2019-04-26 09:55:46.709 [INF] LNWL: Caught up to height 370000
+2019-04-26 09:55:47.794 [INF] LNWL: Caught up to height 380000
+2019-04-26 09:55:48.989 [INF] LNWL: Caught up to height 390000
+2019-04-26 09:55:50.181 [INF] LNWL: Caught up to height 400000
+2019-04-26 09:55:50.484 [INF] BTCN: Verified 90000 filter headers in the last 10.01s (height 403001, 2016-03-16 18:24:41 -0600 MDT)
+2019-04-26 09:55:51.338 [INF] LNWL: Caught up to height 410000
+2019-04-26 09:55:52.525 [INF] LNWL: Caught up to height 420000
+2019-04-26 09:55:53.623 [INF] LNWL: Caught up to height 430000
+2019-04-26 09:55:54.622 [INF] LNWL: Caught up to height 440000
+2019-04-26 09:55:55.720 [INF] LNWL: Caught up to height 450000
+2019-04-26 09:55:56.816 [INF] LNWL: Caught up to height 460000
+2019-04-26 09:55:57.917 [INF] LNWL: Caught up to height 470000
+2019-04-26 09:55:59.002 [INF] LNWL: Caught up to height 480000
+2019-04-26 09:56:00.201 [INF] LNWL: Caught up to height 490000
+2019-04-26 09:56:00.606 [INF] BTCN: Verified 90000 filter headers in the last 10.12s (height 493001, 2017-11-03 23:19:23 -0600 MDT)
+2019-04-26 09:56:01.294 [INF] LNWL: Caught up to height 500000
+2019-04-26 09:56:02.399 [INF] LNWL: Caught up to height 510000
+2019-04-26 09:56:03.459 [INF] LNWL: Caught up to height 520000
+2019-04-26 09:56:04.451 [INF] LNWL: Caught up to height 530000
+2019-04-26 09:56:05.555 [INF] LNWL: Caught up to height 540000
+2019-04-26 09:56:06.546 [INF] LNWL: Caught up to height 550000
+2019-04-26 09:56:07.642 [INF] LNWL: Caught up to height 560000
+2019-04-26 09:56:10.604 [INF] BTCN: Waiting for more block headers, then will start cfheaders sync from height 560000...
+2019-04-26 09:56:10.604 [INF] BTCN: Starting cfheaders sync from (block_height=560000, block_hash=0000000000000000002c7b276daf6efb2b6aa68e2ce3be67ef925b3264ae7122) to (block_height=573341, block_hash=000000000000000000256f11ed15ff54ec47d7def99517360bb153236119556b)
+2019-04-26 09:56:10.604 [INF] BTCN: Starting cfheaders sync for filter_type=0
+2019-04-26 09:56:10.723 [INF] BTCN: Fetching set of checkpointed cfheaders filters from height=560000, hash=11265a848569a3c492a286c91661cb7ec4c1621669476f1372539439f6f0bf68
+2019-04-26 09:56:10.723 [INF] BTCN: Starting to query for cfheaders from checkpoint_interval=560
+2019-04-26 09:56:10.726 [INF] BTCN: Attempting to query for 13 cfheader batches
+2019-04-26 09:56:10.816 [INF] BTCN: Verified 67000 filter headers in the last 10.2s (height 560001, 2019-01-24 21:23:41 -0700 MST)
+2019-04-26 09:56:12.007 [INF] LNWL: Caught up to height 570000
+2019-04-26 09:56:12.373 [INF] LNWL: Started rescan from block 000000000000000000058e89fdd2203dad9a97de2edc1acdb8d516e91ab57e40 (height 572908) for 0 addresses
+2019-04-26 09:56:12.373 [INF] BTCN: Registering block subscription: id=2
+2019-04-26 09:56:12.373 [INF] BTCN: Canceling block subscription: id=2
+2019-04-26 09:56:12.374 [INF] LNWL: Catching up block hashes to height 572909, this might take a while
+2019-04-26 09:56:12.374 [INF] LNWL: Done catching up block hashes
+2019-04-26 09:56:12.374 [INF] LNWL: Rescanned through block 0000000000000000001f756b15f41937ce4ef34ba2cec417222dc347a146d602 (height 572909)
+2019-04-26 09:56:12.381 [INF] BTCN: Registering block subscription: id=3
+2019-04-26 09:56:15.297 [INF] BTCN: Fully caught up with cfheaders at height 573341, waiting at tip for new blocks
+2019-04-26 09:56:15.297 [INF] BTCN: Attempting to fetch set of un-checkpointed filters at height=573341, hash=000000000000000000256f11ed15ff54ec47d7def99517360bb153236119556b
+2019-04-26 09:56:15.466 [INF] LNWL: Catching up block hashes to height 573341, this might take a while
+2019-04-26 09:56:15.466 [INF] LNWL: Done catching up block hashes
+2019-04-26 09:56:15.466 [INF] LNWL: Finished rescan for 0 addresses (synced to block 000000000000000000256f11ed15ff54ec47d7def99517360bb153236119556b, height 573341)
+2019-04-26 09:56:15.827 [INF] LTND: Chain backend is fully synced (end_height=573341)!
+2019-04-26 09:56:15.827 [INF] BTCN: Registering block subscription: id=4
+2019-04-26 09:56:15.829 [INF] HSWC: Starting HTLC Switch
+2019-04-26 09:56:15.829 [INF] NTFN: New block epoch subscription
+2019-04-26 09:56:15.829 [INF] NTFN: New block epoch subscription
+2019-04-26 09:56:15.829 [INF] NTFN: New block epoch subscription
+2019-04-26 09:56:15.829 [INF] NTFN: New block epoch subscription
+2019-04-26 09:56:15.829 [INF] DISC: Authenticated Gossiper is starting
+2019-04-26 09:56:15.829 [INF] BRAR: Starting contract observer, watching for breaches.
+2019-04-26 09:56:15.829 [INF] NTFN: New block epoch subscription
+2019-04-26 09:56:15.830 [INF] CRTR: FilteredChainView starting
+2019-04-26 09:56:15.830 [INF] CRTR: Filtering chain using 0 channels active
+2019-04-26 09:56:15.831 [INF] CRTR: Prune tip for Channel Graph: height=573341, hash=000000000000000000256f11ed15ff54ec47d7def99517360bb153236119556b
+2019-04-26 09:56:15.831 [INF] BTCN: Registering block subscription: id=5
+2019-04-26 09:56:15.831 [INF] CHBU: Starting chanbackup.SubSwapper
+2019-04-26 09:56:15.831 [INF] CMGR: Server listening on [::]:9735
+2019-04-26 09:56:15.832 [INF] SRVR: Initializing peer network bootstrappers!
+2019-04-26 09:56:15.832 [INF] SRVR: Creating DNS peer bootstrapper with seeds: [[nodes.lightning.directory soa.nodes.lightning.directory]]
+2019-04-26 09:56:15.832 [INF] DISC: Attempting to bootstrap with: BOLT-0010 DNS Seed: [[nodes.lightning.directory soa.nodes.lightning.directory]]
+2019-04-26 09:56:15.833 [INF] CHBU: Updating backup file at lnd/data/chain/bitcoin/mainnet/channel.backup
+2019-04-26 09:56:15.834 [INF] CHBU: Swapping old multi backup file from lnd/data/chain/bitcoin/mainnet/temp-dont-use.backup to lnd/data/chain/bitcoin/mainnet/channel.backup
+2019-04-26 09:56:16.285 [INF] DISC: Obtained 3 addrs to bootstrap network with
+2019-04-26 09:56:16.287 [ERR] CMGR: Can't accept connection: unable to accept connection from [::1]:59257: chacha20poly1305: message authentication failed
+2019-04-26 09:56:16.287 [ERR] SRVR: Unable to connect to 023949b49e18512c757d7577f017470e281d640699a21cd91a2e9fc6e5b93ba59b@[::]:9735: EOF
+2019-04-26 09:56:16.287 [ERR] SRVR: Unable to connect to 023949b49e18512c757d7577f017470e281d640699a21cd91a2e9fc6e5b93ba59b@[::]:9735: EOF
+2019-04-26 09:56:16.358 [INF] SRVR: Established connection to: 03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d@35.233.233.86:9735
+2019-04-26 09:56:16.358 [INF] SRVR: Finalizing connection to 03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d@35.233.233.86:9735, inbound=false
+2019-04-26 09:56:16.394 [INF] SRVR: Pruning peer 03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d from persistent connections, number of open channels is now zero
+2019-04-26 09:56:16.394 [INF] SRVR: Negotiated chan series queries with 03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d
+2019-04-26 09:56:16.394 [INF] DISC: Creating new GossipSyncer for peer=03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d
+2019-04-26 09:56:16.395 [INF] DISC: Attempting historical sync with GossipSyncer(03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d)
+2019-04-26 09:56:16.395 [INF] DISC: GossipSyncer(03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d): requesting new chans from height=0 and 4294967295 blocks after
+2019-04-26 09:56:16.515 [INF] DISC: GossipSyncer(03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d): buffering chan range reply of size=8000
+2019-04-26 09:56:16.551 [INF] DISC: GossipSyncer(03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d): buffering chan range reply of size=8000
+2019-04-26 09:56:16.552 [INF] DISC: GossipSyncer(03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d): buffering chan range reply of size=8000
+2019-04-26 09:56:16.589 [INF] DISC: GossipSyncer(03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d): buffering chan range reply of size=8000
+2019-04-26 09:56:16.590 [INF] DISC: GossipSyncer(03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d): buffering chan range reply of size=6421
+2019-04-26 09:56:16.590 [INF] DISC: GossipSyncer(03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d): filtering through 38421 chans
+2019-04-26 09:56:16.600 [INF] SRVR: Established connection to: 036ae68d1fe7a8dcbdb39492759f6b7b985edc7852a230cc3172a4dbc8be3a5518@80.211.255.28:9735
+2019-04-26 09:56:16.600 [INF] SRVR: Finalizing connection to 036ae68d1fe7a8dcbdb39492759f6b7b985edc7852a230cc3172a4dbc8be3a5518@80.211.255.28:9735, inbound=false
+2019-04-26 09:56:16.600 [INF] DISC: Attempting to bootstrap with: Authenticated Channel Graph
+2019-04-26 09:56:16.600 [INF] DISC: GossipSyncer(03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d): starting query for 38421 new chans
+2019-04-26 09:56:16.600 [INF] DISC: GossipSyncer(03bdeb19815dc74c8413a196da388da8b4fababe522355a24c51730bae5007b66d): querying for 500 new channels
+2019-04-26 09:56:16.600 [INF] DISC: Attempting to bootstrap with: BOLT-0010 DNS Seed: [[nodes.lightning.directory soa.nodes.lightning.directory]]
+2019-04-26 09:56:16.756 [INF] SRVR: Pruning peer 036ae68d1fe7a8dcbdb39492759f6b7b985edc7852a230cc3172a4dbc8be3a5518 from persistent connections, number of open channels is now zero
+2019-04-26 09:56:16.756 [INF] SRVR: Negotiated chan series queries with 036ae68d1fe7a8dcbdb39492759f6b7b985edc7852a230cc3172a4dbc8be3a5518
+2019-04-26 09:56:16.756 [INF] DISC: Creating new GossipSyncer for peer=036ae68d1fe7a8dcbdb39492759f6b7b985edc7852a230cc3172a4dbc8be3a5518
+2019-04-26 09:56:16.789 [INF] DISC: Obtained 1 addrs to bootstrap network with
+2019-04-26 09:56:16.867 [INF] SRVR: Established connection to: 029d0e4a96631af2d0038c8e5c6c1ae6b0d1122b971fb8e32c7e0811fffb650dab@216.160.116.136:9735
+2019-04-26 09:56:16.867 [INF] SRVR: Finalizing connection to 029d0e4a96631af2d0038c8e5c6c1ae6b0d1122b971fb8e32c7e0811fffb650dab@216.160.116.136:9735, inbound=false
+2019-04-26 09:56:16.908 [INF] SRVR: Pruning peer 029d0e4a96631af2d0038c8e5c6c1ae6b0d1122b971fb8e32c7e0811fffb650dab from persistent connections, number of open channels is now zero
+2019-04-26 09:56:16.908 [INF] SRVR: Negotiated chan series queries with 029d0e4a96631af2d0038c8e5c6c1ae6b0d1122b971fb8e32c7e0811fffb650dab
+2019-04-26 09:56:16.908 [INF] DISC: Creating new GossipSyncer for peer=029d0e4a96631af2d0038c8e5c6c1ae6b0d1122b971fb8e32c7e0811fffb650dab
+2019-04-26 09:56:21.399 [INF] DISC: GossipSyncer(036ae68d1fe7a8dcbdb39492759f6b7b985edc7852a230cc3172a4dbc8be3a5518): applying gossipFilter(start=2019-04-26 09:56:21.399429 -0600 MDT m=+101.261603029, end=2155-06-02 15:24:36.399429 -0700 MST m=+4294967396.261603029)
+2019-04-26 09:56:21.399 [INF] DISC: GossipSyncer(036ae68d1fe7a8dcbdb39492759f6b7b985edc7852a230cc3172a4dbc8be3a5518): requesting new chans from height=0 and 4294967295 blocks after
+2019-04-26 09:56:21.399 [INF] DISC: GossipSyncer(036ae68d1fe7a8dcbdb39492759f6b7b985edc7852a230cc3172a4dbc8be3a5518): filtering chan range: start_height=573192, num_blocks=4294394103
+2019-04-26 09:56:21.399 [INF] DISC: GossipSyncer(036ae68d1fe7a8dcbdb39492759f6b7b985edc7852a230cc3172a4dbc8be3a5518): sending final chan range chunk, size=0
+2019-04-26 09:56:21.399 [INF] DISC: GossipSyncer(029d0e4a96631af2d0038c8e5c6c1ae6b0d1122b971fb8e32c7e0811fffb650dab): filtering chan range: start_height=573192, num_blocks=4294394103
+2019-04-26 09:56:21.399 [INF] DISC: GossipSyncer(029d0e4a96631af2d0038c8e5c6c1ae6b0d1122b971fb8e32c7e0811fffb650dab): sending final chan range chunk, size=0
+2019-04-26 09:56:21.438 [INF] DISC: GossipSyncer(029d0e4a96631af2d0038c8e5c6c1ae6b0d1122b971fb8e32c7e0811fffb650dab): applying new update horizon: start=2019-04-26 08:56:22 -0600 MDT, end=2155-06-02 14:24:37 -0700 MST, backlog_size=0
+2019-04-26 09:56:21.889 [INF] DISC: GossipSyncer(036ae68d1fe7a8dcbdb39492759f6b7b985edc7852a230cc3172a4dbc8be3a5518): buffering chan range reply of size=8000
+2019-04-26 09:56:22.046 [INF] DISC: GossipSyncer(036ae68d1fe7a8dcbdb39492759f6b7b985edc7852a230cc3172a4dbc8be3a5518): buffering chan range reply of size=8000
+2019-04-26 09:57:00.822 [INF] BTCN: Processed 113021 blocks in the last 1m40.26s (height 573342, 2019-04-26 09:56:50 -0600 MDT)
+2019-04-26 09:57:00.823 [INF] BTCN: Attempting to fetch set of un-checkpointed filters at height=573342, hash=000000000000000000123fb33af796a1dc7839e57290ebcf5f612e06185e2fd5
+2019-04-26 09:57:00.876 [INF] BTCN: Verified 13341 filter headers in the last 50.06s (height 573342, 2019-04-26 09:56:50 -0600 MDT)
+2019-04-26 09:57:00.928 [INF] NTFN: New block: height=573342, sha=000000000000000000123fb33af796a1dc7839e57290ebcf5f612e06185e2fd5
+2019-04-26 09:57:00.928 [INF] CRTR: Pruning channel graph using block 000000000000000000123fb33af796a1dc7839e57290ebcf5f612e06185e2fd5 (height=573342)
+2019-04-26 09:57:00.928 [INF] SWPR: Sweep candidates at height=573342, yield 0 distinct txns
+2019-04-26 09:57:00.928 [INF] UTXN: Attempting to graduate height=573342: num_kids=0, num_babies=0
+2019-04-26 09:57:00.930 [INF] CRTR: Block 000000000000000000123fb33af796a1dc7839e57290ebcf5f612e06185e2fd5 (height=573342) closed 0 channels
