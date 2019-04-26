@@ -4,6 +4,6 @@
 
 `npm install`
 
-`node start.js`
+`node index.js` or `pm2 start index.js`
 
 ![](https://i.imgur.com/1GoAuoY.png)
