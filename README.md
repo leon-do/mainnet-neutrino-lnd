@@ -2,6 +2,8 @@
 
 `cd mainnet-neutrino-lnd`
 
+`node setup.js`
+
 `./lnd-osx --lnddir=./lnd`
 
 `./lncli-osx --lnddir ./lnd create`
