@@ -3,7 +3,7 @@ const {spawn} = require('child_process')
 const fs = require('fs')
 const lnService = require('ln-service')
 const createSeed = require('ln-service/createSeed')
-const {createWallet} = require('ln-service')
+const createWallet = require('ln-service/createWallet')
 const publicIp = require('public-ip')
 const base64url = require('base64url')
 
@@ -12,7 +12,7 @@ start()
 async function start() {
   // append conf
   await appendConf()
-  
+
   // start lnd
   spawn(`./lnd-${process.platform}`, ['--lnddir=./lnd'])
 
