@@ -2,6 +2,8 @@
 
 `cd mainnet-neutrino-lnd`
 
+`npm install`
+
 `node setup.js`
 
 `./lnd-osx --lnddir=./lnd`
@@ -9,8 +11,6 @@
 `./lncli-osx --lnddir ./lnd create`
 
 `./lncli-osx --lnddir ./lnd unlock`
-
-`npm install`
 
 `node connect.js`
 
