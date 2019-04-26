@@ -19,7 +19,7 @@ async function start() {
   // check if wallet does not exist
   if (!fs.existsSync('./lnd/data/chain/bitcoin/mainnet/wallet.db')) {
     // wait for lnd to create tls.cert
-    await pause(5000)
+    await pause(10000)
     createNewWallet()
   }
 
@@ -47,7 +47,7 @@ async function createNewWallet() {
   })
 
   // wait to for lnd to create files
-  await pause(5000)
+  await pause(10000)
 
   // generate lnconnect string
   const connect = await lndconnect()
