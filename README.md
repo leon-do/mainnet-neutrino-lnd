@@ -10,7 +10,7 @@
 
 `npm install`
 
-`node app.js`
+`node connect.js`
 
 
 ![](https://i.imgur.com/1GoAuoY.png)
