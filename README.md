@@ -4,4 +4,6 @@
 
 `node index.js` or `pm2 start index.js`
 
+`cat ./lnd/secret.json`
+
 `./lncli-linux --lnddir ./lnd getinfo`
