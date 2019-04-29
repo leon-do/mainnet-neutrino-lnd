@@ -39,7 +39,6 @@ async function unlockExistingWallet() {
 
   // get password
   const password = (await JSON.parse(fs.readFileSync('./lnd/secret.json').toString())).password
-  console.log(password)
 
   // unlock wallet
   await unlockWallet({
@@ -78,6 +77,8 @@ async function createNewWallet() {
 
   // create new secret.json file
   fs.writeFileSync('./lnd/secret.json', JSON.stringify({seed, password, connect}, null, 2))
+
+  console.log('wallet created')
 }
 
 function pause(ms) {
