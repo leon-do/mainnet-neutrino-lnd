@@ -45,7 +45,7 @@ async function unlockExistingWallet() {
     lnd,
     password: secret.password
   })
-  
+
   console.log(secret)
 }
 
@@ -121,6 +121,8 @@ async function appendConf() {
     // append tlsextraip to lnd.conf
     const ip = await publicIp.v4()
     const tlsextraip= `\ntlsextraip=${ip}`
+    const externalip = `\nexternalip=${ip}` 
     fs.appendFileSync('./lnd/lnd.conf', tlsextraip)
+    fs.appendFileSync('./lnd/lnd.conf', externalip)
   }
 }
