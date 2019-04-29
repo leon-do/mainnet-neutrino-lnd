@@ -7,3 +7,5 @@
 `cat ./lnd/secret.json`
 
 `./lncli-linux --lnddir ./lnd getinfo`
+
+open ports 10009 and 9735
