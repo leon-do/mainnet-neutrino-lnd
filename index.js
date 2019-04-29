@@ -4,9 +4,9 @@ const fs = require('fs')
 const lnService = require('ln-service')
 const createSeed = require('ln-service/createSeed')
 const createWallet = require('ln-service/createWallet')
+const unlockWallet = require('ln-service/unlockWallet')
 const publicIp = require('public-ip')
 const base64url = require('base64url')
-
 
 start()
 async function start() {
@@ -16,13 +16,37 @@ async function start() {
   // start lnd
   spawn(`./lnd-${process.platform}`, ['--lnddir=./lnd'])
 
-  // check if wallet does not exist
-  if (!fs.existsSync('./lnd/data/chain/bitcoin/mainnet/wallet.db')) {
-    // wait for lnd to create tls.cert
-    await pause(10000)
-    createNewWallet()
-  }
+  // wait for lnd to create tls.cert
+  await pause(10000)
 
+  // check if wallet does not exist
+  if (fs.existsSync('./lnd/data/chain/bitcoin/mainnet/wallet.db')) {
+    unlockExistingWallet()
+  } else {
+    createNewWallet()
+  } 
+
+}
+
+async function unlockExistingWallet() {
+  // connect to lnd
+  const lnd = lnService.lightningDaemon({
+    cert: Buffer.from(fs.readFileSync('./lnd/tls.cert'), 'base64').toString('hex'),
+    macaroon: Buffer.from(fs.readFileSync('./lnd/data/chain/bitcoin/mainnet/admin.macaroon'), 'base64').toString('hex'),
+    socket: '127.0.0.1:10009',
+    service: 'WalletUnlocker'
+  })
+
+  // get password
+  const password = (await JSON.parse(fs.readFileSync('./lnd/secret.json').toString())).password
+  console.log(password)
+
+  // unlock wallet
+  await unlockWallet({
+    lnd,
+    password
+  })
+  console.log('wallet unlocked')
 }
 
 async function createNewWallet() {
