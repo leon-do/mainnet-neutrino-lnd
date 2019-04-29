@@ -3,5 +3,3 @@
 `cd mainnet-neutrino-lnd && git checkout one-command && npm install`
 
 `node index.js` or `pm2 start index.js`
-
-![](https://i.imgur.com/1GoAuoY.png)
