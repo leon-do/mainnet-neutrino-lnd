@@ -3,3 +3,5 @@
 `cd mainnet-neutrino-lnd && git checkout one-command && npm install`
 
 `node index.js` or `pm2 start index.js`
+
+`./lncli-linux --lnddir ./lnd getinfo`
