@@ -18,6 +18,7 @@
   "homepage": "https://github.com/leon-do/mainnet-neutrino-lnd#readme",
   "dependencies": {
     "base64url": "^3.0.1",
+    "ln-service": "^36.1.0",
     "public-ip": "^3.1.0"
   }
 }
