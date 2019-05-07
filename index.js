@@ -16,7 +16,7 @@ async function start() {
   // start lnd
   spawn(`./lnd-${process.platform}`, ['--lnddir=./lnd'])
   .stdout.on('data', (data) => {
-    console.log(data);
+    console.log(data.toString());
   });
 
   // wait for lnd to create tls.cert
