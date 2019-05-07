@@ -14,7 +14,7 @@ async function start() {
   await appendConf();
 
   // start lnd
-  spawn(`./lnd-${process.platform}`, ["--lnddir=./lnd"]);
+  spawn(`./lnd-${process.platform}`, ["--lnddir=./lnd"])
   .stdout.on('data', (data) => {
     console.log(data.toString());
   });
