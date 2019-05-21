@@ -1,27 +1,27 @@
 #!/bin/bash
 echo "updating"
-apt-get update
+sudo apt-get update
 
 echo "upgrading"
-apt-get upgrade
+sudo apt-get upgrade
 
 echo "installing npm"
-apt install npm
+sudo apt install npm
 
 echo "installing node"
 npm install -g n
 
-echo "installing pm2"
-npm install -g pm2
+echo "updating node to lts"
+sudo n lts
 
 echo "installing node-gyp"
 npm install -g node-gyp
 
+echo "installing pm2"
+npm install -g pm2
+
 echo "installing packages"
 npm install
-
-echo "updating node to latest version"
-n latest
 
 echo "start lnd"
 pm2 start index.js
