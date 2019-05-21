@@ -17,6 +17,9 @@ npm install -g n
 echo "installing pm2"
 npm install -g pm2
 
+echo "installing node-gyp"
+npm install -g node-gyp
+
 echo "updating node to latest version"
 n latest
 
