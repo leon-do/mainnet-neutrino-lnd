@@ -8,9 +8,6 @@ apt-get upgrade
 echo "installing npm"
 apt install npm
 
-echo "installing packages"
-npm install
-
 echo "installing node"
 npm install -g n
 
@@ -19,6 +16,9 @@ npm install -g pm2
 
 echo "installing node-gyp"
 npm install -g node-gyp
+
+echo "installing packages"
+npm install
 
 echo "updating node to latest version"
 n latest
