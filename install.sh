@@ -1,26 +1,18 @@
 #!/bin/bash
 echo "updating"
-sudo apt-get update
+apt update
 
 echo "upgrading"
-sudo apt-get upgrade
+apt upgrade
 
 echo "installing npm"
-sudo apt install npm
-
-echo "update permissions"
-sudo chown -R $USER ~/.npm
-sudo chown -R $USER /usr/lib
-sudo chown -R $USER /usr/local
-
-echo "installing node-gyp"
-npm install -g node-gyp
+apt install npm
 
 echo "installing node"
 npm install -g n
 
 echo "updating node to lts"
-sudo n lts
+n lts
 
 echo "installing pm2"
 npm install -g pm2
