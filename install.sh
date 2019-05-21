@@ -7,11 +7,11 @@ sudo apt-get upgrade
 
 echo "update permissions"
 sudo chown -R $USER ~/.npm
-sudo chown -R $USER /usr/lib/node_modules
-sudo chown -R $USER /usr/local/lib/node_modules
+sudo chown -R $USER /usr/lib
+sudo chown -R $USER /usr/local
 
 echo "installing npm"
-sudo apt-get install npm
+sudo apt install npm
 
 echo "installing node-gyp"
 npm install -g node-gyp
