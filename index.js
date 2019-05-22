@@ -22,7 +22,7 @@ async function start() {
   // wait for lnd to create tls.cert
   await pause(10000)
 
-  // check if wallet does not exist
+  // check if wallet exists
   if (fs.existsSync('./lnd/data/chain/bitcoin/mainnet/wallet.db')) {
     unlockExistingWallet()
   } else {
@@ -49,13 +49,15 @@ async function unlockExistingWallet() {
     password: secret.password
   })
 
-  console.log(secret)
 }
 
 async function createNewWallet() {
+  // get cert string
+  const cert = Buffer.from(fs.readFileSync('./lnd/tls.cert'), 'base64').toString('hex')
+
   // connect to lnd without macaroon
   const lnd = lnService.lightningDaemon({
-    cert: Buffer.from(fs.readFileSync('./lnd/tls.cert'), 'base64').toString('hex'),
+    cert,
     service: 'WalletUnlocker',
     socket: '127.0.0.1:10009'
   })
@@ -79,18 +81,13 @@ async function createNewWallet() {
   // generate lnconnect string
   const connect = await lndconnect()
 
+  // get macaroon string
+  const macaroon = Buffer.from(fs.readFileSync('./lnd/data/chain/bitcoin/mainnet/admin.macaroon'), 'base64').toString('hex')
+
   // create new secret.json file
-  fs.writeFileSync('./lnd/secret.json', JSON.stringify({seed, password, connect}, null, 2))
+  fs.writeFileSync('./lnd/secret.json', JSON.stringify({seed, password, connect, cert, macaroon}, null, 2))
 
-  console.log({seed, password, connect})
-}
-
-function pause(ms) {
-  return new Promise(res => {
-    setTimeout(() => {
-      res()
-    }, ms)
-  }, ms)
+  console.log({seed, password, connect, cert, macaroon})
 }
 
 async function lndconnect() {
@@ -128,4 +125,12 @@ async function appendConf() {
     fs.appendFileSync('./lnd/lnd.conf', tlsextraip)
     fs.appendFileSync('./lnd/lnd.conf', externalip)
   }
+}
+
+function pause(ms) {
+  return new Promise(res => {
+    setTimeout(() => {
+      res()
+    }, ms)
+  }, ms)
 }
