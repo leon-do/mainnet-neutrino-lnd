@@ -40,6 +40,9 @@ or start lnd as daemon
 
 ![](https://i.imgur.com/FYInPky.png)
 
+Or use cert and macaroon (in base64) to [connect](https://github.com/alexbosworth/ln-service#using-grpc)
+
+
 ## Use cli
 
 `./lncli-linux --lnddir ./lnd getinfo`
