@@ -16,7 +16,7 @@ Start lnd:
 
 `node index.js`
 
-Start lnd (daemon): 
+or start lnd as daemon: 
 
 `pm2 start index.js`
 
