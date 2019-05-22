@@ -84,10 +84,15 @@ async function createNewWallet() {
   // get macaroon string
   const macaroon = Buffer.from(fs.readFileSync('./lnd/data/chain/bitcoin/mainnet/admin.macaroon'), 'base64').toString('hex')
 
-  // create new secret.json file
-  fs.writeFileSync('./lnd/secret.json', JSON.stringify({seed, password, connect, cert, macaroon}, null, 2))
+  // ip
+  const address = await publicIp.v4()
+  const port = '10009'
+  const url = `${address}:${port}`
 
-  console.log({seed, password, connect, cert, macaroon})
+  // create new secret.json file
+  fs.writeFileSync('./lnd/secret.json', JSON.stringify({seed, password, connect, cert, macaroon, url}, null, 2))
+
+  console.log({seed, password, connect, cert, macaroon, url})
 }
 
 async function lndconnect() {
