@@ -1,6 +1,6 @@
 ## Overview
 
-A quick way to host a mainnet ln node without syncing the whole blockchain.
+A quick way to host a mainnet ln node without syncing the whole blockchain. Create a wallet in a few minutes.
 
 ## Clone
 
