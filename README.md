@@ -46,7 +46,13 @@ Or use cert, macaroon (in base64) and socket to [connect](https://github.com/ale
 
 ## Use cli
 
+Linux
+
 `./lncli-linux --lnddir ./lnd getinfo`
+
+OSX
+
+`./lncli-darwin --lnddir ./lnd getinfo`
 
 ## Note
 
