@@ -38,10 +38,10 @@ or start lnd as daemon
 
 ![](https://i.imgur.com/FYInPky.png)
 
-## Use cli: 
+## Use cli
 
 `./lncli-linux --lnddir ./lnd getinfo`
 
-## Note: 
+## Note
 
 open ports 10009 and 9735
