@@ -5,15 +5,11 @@ apt update
 echo "upgrading"
 apt upgrade
 
-echo "get curl"
-apt get curl
+echo "install nodejs"
+apt install nodejs
 
-echo "installing docker"
-curl -fsSL https://get.docker.com -o get-docker.sh
-sh get-docker.sh
+echo "install npm"
+apt install npm
 
-echo "building..."
-docker build -t neutrino ./
-
-echo "running..."
-docker run -p 10009:10009 neutrino 
+echo "installing from package.json"
+npm install
