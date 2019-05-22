@@ -87,12 +87,12 @@ async function createNewWallet() {
   // ip
   const address = await publicIp.v4()
   const port = '10009'
-  const url = `${address}:${port}`
+  const socket = `${address}:${port}`
 
   // create new secret.json file
-  fs.writeFileSync('./lnd/secret.json', JSON.stringify({seed, password, connect, cert, macaroon, url}, null, 2))
+  fs.writeFileSync('./lnd/secret.json', JSON.stringify({seed, password, connect, cert, macaroon, socket}, null, 2))
 
-  console.log({seed, password, connect, cert, macaroon, url})
+  console.log({seed, password, connect, cert, macaroon, socket})
 }
 
 async function lndconnect() {
