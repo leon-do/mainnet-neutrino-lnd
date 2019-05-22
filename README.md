@@ -8,23 +8,23 @@ A quick way to host a mainnet ln node without syncing the whole blockchain. Crea
 
 `cd mainnet-neutrino-lnd`
 
-## If you're installing from scratch (linux): 
+## If you're installing from scratch (linux)
 
 `sudo sh install.sh`
 
-## Install dependencies: 
+## Install dependencies
 
 `npm install`
 
-## Start lnd: 
+## Start lnd
 
 `node index.js`
 
-or start lnd as daemon: 
+or start lnd as daemon
 
 `pm2 start index.js`
 
-## Display secret to connect to zap: 
+## Display secret to connect to zap wallet
 
 `cat ./lnd/secret.json`
 
