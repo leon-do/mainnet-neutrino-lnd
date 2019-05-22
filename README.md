@@ -1,18 +1,22 @@
-Clone
+## Overview
+
+A quick way to host a mainnet ln node without syncing the whole blockchain.
+
+## Clone
 
 `git clone https://github.com:leon-do/mainnet-neutrino-lnd.git`
 
 `cd mainnet-neutrino-lnd`
 
-If you're installing from scratch (linux): 
+## If you're installing from scratch (linux): 
 
 `sudo sh install.sh`
 
-Install dependencies: 
+## Install dependencies: 
 
 `npm install`
 
-Start lnd: 
+## Start lnd: 
 
 `node index.js`
 
@@ -20,7 +24,7 @@ or start lnd as daemon:
 
 `pm2 start index.js`
 
-Display secret to connect to zap: 
+## Display secret to connect to zap: 
 
 `cat ./lnd/secret.json`
 
@@ -34,8 +38,10 @@ Display secret to connect to zap:
 
 ![](https://i.imgur.com/FYInPky.png)
 
-Use cli: 
+## Use cli: 
 
 `./lncli-linux --lnddir ./lnd getinfo`
 
-Note: open ports 10009 and 9735
+## Note: 
+
+open ports 10009 and 9735
