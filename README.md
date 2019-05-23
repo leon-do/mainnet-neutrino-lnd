@@ -4,7 +4,7 @@ A quick way to host a mainnet ln node without syncing the whole blockchain. Crea
 
 ## Clone
 
-`git clone https://github.com:leon-do/mainnet-neutrino-lnd.git`
+`git clone https://github.com/leon-do/mainnet-neutrino-lnd.git`
 
 `cd mainnet-neutrino-lnd`
 
