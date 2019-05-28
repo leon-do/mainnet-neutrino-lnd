@@ -8,7 +8,7 @@ A quick way to host a mainnet ln node without syncing the whole blockchain. Crea
 
 `cd mainnet-neutrino-lnd`
 
-## If you're installing from scratch (linux)
+## If you're installing from scratch (ubuntu)
 
 `sudo sh install.sh`
 
