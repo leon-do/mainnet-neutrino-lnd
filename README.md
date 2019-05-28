@@ -59,3 +59,11 @@ OSX
 open ports 10009 and 9735
 
 To compile yourself, remove https://github.com/lightningnetwork/lnd/blob/4806003b74830c1ad23a56588a54875378fe75ea/config.go#L772
+```golang
+  if cfg.Bitcoin.Node == "neutrino" && cfg.Bitcoin.MainNet {
+    str := "%s: neutrino isn't yet supported for " +
+      "bitcoin's mainnet"
+    err := fmt.Errorf(str, funcName)
+    return nil, err
+  }
+```
